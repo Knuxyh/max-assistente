@@ -1,0 +1,39 @@
+# Ambiente Python (recriar com: python -m venv .venv + pip install -r requirements.txt)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Modelos baixados: Whisper e Kokoro, centenas de MB
+modelos/
+
+# Áudios de teste e amostras de voz
+amostras/
+*.mp3
+*.wav
+
+# Logs (max.log e os rotacionados max.log.1, max.log.2...)
+*.log
+*.log.*
+
+# Configuração pessoal: copie config.exemplo.json para config.json
+config.json
+
+# Backups antigos do código e do config
+max_antes_*.py
+max_original_backup.py
+config_antes_*.json
+config_backup.json
+
+# Segredos e credenciais (a chave da ElevenLabs fica só na variável de ambiente ELEVENLABS_API_KEY)
+.env
+.env.*
+*.pem
+*.key
+.credentials.json
+*credentials*.json
+
+# Conversas e sessões salvas
+*.jsonl
+sessoes/
+conversas/
