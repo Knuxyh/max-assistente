@@ -48,7 +48,3 @@ Tudo fica em `config.json` (copiado do `config.exemplo.json`). Os principais:
 - **ElevenLabs**: crie a variável de ambiente do Windows `ELEVENLABS_API_KEY` com a sua chave e ligue `"usar_elevenlabs": true`. Nunca escreva a chave em arquivo do projeto.
 - **Kokoro (local)**: baixe `kokoro-v1.0.onnx` e `voices-v1.0.bin` da release `model-files-v1.0` do repositório thewh1teagle/kokoro-onnx no GitHub, coloque em `modelos\kokoro\` e ligue `"usar_kokoro": true`.
 
-## O que não vai para o repositório
-
-Veja o `.gitignore`: venv, modelos, áudios, logs, `config.json` pessoal, backups antigos e qualquer arquivo de credencial.
-O login do Claude fica em `~\.claude\.credentials.json`, fora desta pasta.
